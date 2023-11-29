@@ -1,0 +1,60 @@
+@import "../../utilis";
+
+@include xxl{
+  .container{
+    margin-left: 150px;
+    margin-top: 46px;
+  }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .routes{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .item{
+    color: var(--light-text, #E4E5EA);
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .logoContainer{
+    display: flex;
+    column-gap: 8px;
+  }
+
+  .nameLogo{
+    margin-top: 5px;
+  }
+}
+
+@include xl{
+
+}
+
+@include l{
+
+}
+
+@include lg{
+
+}
+
+@include md{
+
+}
+
+@include sm{
+
+}
+
+@include s{
+
+}
