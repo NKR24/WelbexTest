@@ -1,5 +1,5 @@
 import Navbar from "~/components/navbar"
-import Main from "~/components/navbar"
+import Main from "~/components/main"
 import Contacts from "~/components/contacts";
 
 export default function Home(){

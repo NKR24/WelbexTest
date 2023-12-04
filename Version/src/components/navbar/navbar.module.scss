@@ -1,0 +1,65 @@
+.container {
+    width: 1140px;
+    height: 73px;
+    flex-shrink: 0;
+    display: flex;
+}
+
+.leftPart {
+    width: 140px;
+    height: 73px;
+}
+
+.leftPartPictures {
+    width: 140px;
+    height: 24px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.leftPartText {
+    width: 140px;
+    height: 24px;
+    color: #E4E5EA;
+    font-family: Montserrat, serif;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.buttonsDiv {
+    column-gap: 30px;
+    margin-left: 52px;
+    margin-right: 137px;
+    //position: relative; /* или relative */
+    //left: 52px;
+}
+
+.buttons {
+    color: var(--light-text, #E4E5EA);
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none; /* убираем границу */
+    background: none;
+}
+
+.number {
+    color: var(--light-text, #E4E5EA);
+    text-align: right;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.rightPart {
+    display: flex;
+
+}
