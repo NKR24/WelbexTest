@@ -34,8 +34,6 @@
     column-gap: 30px;
     margin-left: 52px;
     margin-right: 137px;
-    //position: relative; /* или relative */
-    //left: 52px;
 }
 
 .buttons {
@@ -49,7 +47,17 @@
     background: none;
 }
 
+.rightPart {
+    display: flex;
+    column-gap: 47px;
+}
+
+.numberDiv {
+    display: flex;
+}
+
 .number {
+    display: block;
     color: var(--light-text, #E4E5EA);
     text-align: right;
     font-family: Inter, serif;
@@ -57,9 +65,16 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    height: 19px;
 }
 
-.rightPart {
+.icons {
     display: flex;
+    column-gap: 30px;
+}
 
+.iconsButton {
+    border: none; /* убираем границу */
+    background: none;
+    height: 20px;
 }
