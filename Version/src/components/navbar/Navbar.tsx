@@ -1,7 +1,6 @@
 import styles from "./navbar.module.scss"
 
 export default function Navbar(){
-  // @ts-ignore
     return(
     <>
       <div class={styles.container}>
