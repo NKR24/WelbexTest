@@ -33,7 +33,9 @@ export default function Main() {
               <div class={styles.r2textOrdianry}>отдела продаж и CRM системы</div>
             </div>
             <div class={styles.item4}>
+              {/* eslint-disable-next-line no-irregular-whitespace */}
               <div class={styles.r2textTitle}>35 дней</div>
+              {/* eslint-disable-next-line no-irregular-whitespace */}
               <div class={styles.r2textOrdianry}>использования CRM</div>
             </div>
           </div>
