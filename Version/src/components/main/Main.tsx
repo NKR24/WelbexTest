@@ -39,10 +39,6 @@ export default function Main() {
           </div>
         </div>
       </div>
-<<<<<<< HEAD
-=======
-      
->>>>>>> 135457a0a049893e476a95bc8842244706b43f4a
     </>
   )
 }

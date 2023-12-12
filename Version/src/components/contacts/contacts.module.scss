@@ -1,0 +1,55 @@
+.container {
+  margin-top: auto;
+}
+
+.emptyTop {
+  height: 55px;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1.1fr 2.3fr 2fr;
+  grid-template-rows: 1fr 5fr;
+  column-gap: 98px;
+  row-gap: 10px;
+  //width: 750px;
+  height: 180px;
+}
+
+.itemTitle {
+  color: var(--dark-gray, #656566);
+  /* маленькие заголовки */
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.itemOrdinary {
+  display: grid;
+  row-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.itemOrdinaryR {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons {
+  color: var(--light-text, #E4E5EA);
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none; /* убираем границу */
+  background: none;
+  display: flex;
+  padding: 0 0;
+}
