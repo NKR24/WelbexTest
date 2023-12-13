@@ -28,7 +28,33 @@
   text-transform: uppercase;
 }
 
+.itemTitleR {
+  color: var(--dark-gray, #656566);
+  /* маленькие заголовки */
+  font-family: Inter, serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  margin-left: auto;
+}
+
 .itemOrdinary {
+  display: grid;
+  row-gap: 10px;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.itemOrdinaryC {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.itemOrdinaryC {
   display: grid;
   row-gap: 10px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -37,8 +63,7 @@
 .itemOrdinaryR {
   display: grid;
   row-gap: 10px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .buttons {
@@ -52,4 +77,72 @@
   background: none;
   display: flex;
   padding: 0 0;
+}
+
+.numberD {
+  color: var(--light-text, #E4E5EA);
+  text-align: right;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  height: 19px;
+  text-decoration: none;
+  border: none; /* убираем границу */
+  background: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0;
+}
+
+.icons {
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0 0;
+}
+
+.iconsButton {
+  border: none; /* убираем границу */
+  background: none;
+  height: 20px;
+}
+
+.address {
+  color: var(--light-text, #E4E5EA);
+  text-align: right;
+  font-family: Inter, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 53px;
+}
+
+.text1 {
+  color: var(--light-text, #E4E5EA);
+  text-align: right;
+  font-family: Montserrat, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.text2 {
+  color: var(--light-text, #E4E5EA);
+  text-align: right;
+  font-family: Montserrat, serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration-line: underline;
 }
