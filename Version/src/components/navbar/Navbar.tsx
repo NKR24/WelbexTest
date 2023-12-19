@@ -60,7 +60,7 @@ export default function Navbar() {
           <button class={styles.buttons}>Виджеты</button>
           <button class={styles.buttons}>Интеграции</button>
           <button class={styles.buttons}>Кейсы</button>
-          <button class={styles.buttons}>Сертификаты</button>
+          <button class={styles.buttonsLast}>Сертификаты</button>
         </div>
         <div class={styles.rightPart}>
           <a href="tel:+75555555555" class={styles.number}>

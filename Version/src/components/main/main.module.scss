@@ -1,3 +1,5 @@
+@import "../../utilis";
+
 .container {
     width: 1140px;
     height: 550px;
@@ -12,6 +14,7 @@
     flex-direction: column;
     justify-items: left;
     align-items: flex-start;
+    margin-right: auto;
 }
 
 .rightPart {
@@ -51,6 +54,7 @@
     font-weight: 400;
     line-height: normal;
     row-gap: 30px;
+    width: 275px;
 }
 
 .lEmpty {
@@ -163,4 +167,25 @@
 
 .r2Empty {
     height: 42px;
+}
+
+@include s {
+    .container {
+        //display: none;
+        width: 540px;
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .rightPart {
+        display: flex;
+        flex-direction: column;
+        margin-right: auto;
+    }
+    .r1text {
+        width: 291px;
+        flex-direction: row;
+        margin-right: auto;
+    }
 }

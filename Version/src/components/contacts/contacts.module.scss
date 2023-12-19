@@ -1,18 +1,21 @@
+@import "../../utilis";
+
 .container {
   margin-top: auto;
+  width: 1140px;
+  display: flex;
+  flex-direction: column;
 }
 
 .emptyTop {
   height: 55px;
 }
 
-.footerGrid {
-  display: grid;
-  grid-template-columns: 1.1fr 2.3fr 2fr;
-  grid-template-rows: 1fr 5fr;
+.footer {
+  display: flex;
+  flex-direction: row;
   column-gap: 98px;
   row-gap: 10px;
-  //width: 750px;
   height: 180px;
 }
 
@@ -45,19 +48,15 @@
   display: grid;
   row-gap: 10px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  white-space: nowrap;
 }
 
 .itemOrdinaryC {
   display: grid;
   row-gap: 10px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 212px 212px;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-}
-
-.itemOrdinaryC {
-  display: grid;
-  row-gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  white-space: nowrap;
 }
 
 .itemOrdinaryR {
@@ -108,6 +107,7 @@
   border: none; /* убираем границу */
   background: none;
   height: 20px;
+  padding: 0 0;
 }
 
 .address {
@@ -145,4 +145,92 @@
   font-weight: 400;
   line-height: normal;
   text-decoration-line: underline;
+}
+
+.block1 {
+  width: 195px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.block2 {
+  width: 408px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.block3 {
+  width: 277px;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+@include s {
+  .container{
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+    column-gap: 98px;
+    row-gap: 10px;
+  }
+
+  .buttons {
+    color: var(--light-text, #E4E5EA);
+    font-family: Inter, serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none; /* убираем границу */
+    background: none;
+    display: flex;
+    padding: 0 0;
+  }
+
+  .itemOrdinary {
+    display: grid;
+    row-gap: 10px;
+    grid-template-rows: 1fr 1fr;
+    white-space: normal;
+  }
+
+  .itemOrdinaryC {
+    display: grid;
+    row-gap: 10px;
+    grid-template-columns: 1fr 1.1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    white-space: normal;
+    margin-left: auto;
+  }
+
+  .block1 {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .block2 {
+    width: 289px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .block3 {
+    width: 289px;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
 }

@@ -2,7 +2,9 @@
   "name": "questionnaire",
   "scripts": {
     "start": "solid-start dev",
-    "build": "solid-start build"
+    "build": "solid-start build",
+    "preview": "vite preview",
+    "host": "vite --host"
   },
   "type": "module",
   "devDependencies": {

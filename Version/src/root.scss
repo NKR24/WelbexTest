@@ -1,10 +1,19 @@
 @import "assets/fonts/fonts.css";
 
-body{
+@import "utilis.scss";
+
+body {
   background:  #0E1014;
   padding: 57px 150px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@include s {
+  body {
+    padding: 0;
+    width: 540px;
+  }
 }
