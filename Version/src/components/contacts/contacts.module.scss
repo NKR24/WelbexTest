@@ -171,15 +171,17 @@
 
 @include s {
   .container{
-    width: 540px;
+    max-width: 540px;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .footer{
     display: flex;
     flex-direction: column;
     column-gap: 98px;
     row-gap: 10px;
+    height: auto;
   }
 
   .buttons {
@@ -227,10 +229,35 @@
 
   .block3 {
     width: 289px;
-    margin-left: auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+    margin-left: 0;
+    margin-right: auto;
   }
 
+  .bottom {
+    margin-right: auto;
+  }
+
+  .address {
+    font-size: 14px;
+  }
+
+  .itemTitle {
+    font-size: 12px;
+  }
+
+  .itemTitleR {
+    font-size: 12px;
+    margin-left: 0;
+    margin-right: auto;
+  }
+  .numberD {
+    justify-content: flex-start;
+  }
+  .icons {
+    justify-content: flex-start;
+  }
+
+  .address {
+    text-align: left;
+  }
 }
