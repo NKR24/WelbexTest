@@ -1,8 +1,8 @@
 @import "../../utilis";
 
 .container {
-  margin-top: auto;
-  width: 1140px;
+  margin-top: 55px;
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
@@ -16,7 +16,7 @@
   flex-direction: row;
   column-gap: 98px;
   row-gap: 10px;
-  height: 180px;
+  height: 100%;
 }
 
 .itemTitle {
@@ -76,6 +76,19 @@
   background: none;
   display: flex;
   padding: 0 0;
+  text-align: start;
+}
+
+.buttonSwap1 {
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+}
+
+.buttonSwap2 {
+  grid-column: 2;
+  grid-row: 1;
+  display: grid;
 }
 
 .numberD {
@@ -123,7 +136,7 @@
 .bottom {
   display: flex;
   flex-direction: column;
-  margin-top: 53px;
+  margin-top: 33px;
 }
 
 .text1 {
@@ -260,4 +273,68 @@
   .address {
     text-align: left;
   }
+}
+
+@include l {
+  .footer{
+    display: flex;
+    flex-direction: row;
+    column-gap: 98px;
+    row-gap: 30px;
+    height: auto;
+    flex-wrap: wrap;
+  }
+
+  .block3 {
+    width: auto;
+    margin-left: 0;
+    margin-right: auto;
+  }
+
+  .itemTitleR {
+      margin-left: 0;
+      margin-right: auto;
+  }
+
+  .numberD {
+    justify-content: flex-start;
+  }
+
+  .icons {
+    justify-content: flex-start;
+  }
+
+  .iconsButton {
+    border: none; /* убираем границу */
+    background: none;
+    height: 20px;
+    padding: 0 0;
+  }
+
+  .address {
+    text-align: left;
+  }
+
+  .text1 {
+    text-align: left;
+  }
+
+  .text2 {
+    text-align: left;
+  }
+}
+
+@include md {
+  .itemOrdinary {
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .buttonSwap1 {
+    grid-row: 1;
+  }
+
+  .buttonSwap2 {
+    grid-row: 2;
+  }
+
 }

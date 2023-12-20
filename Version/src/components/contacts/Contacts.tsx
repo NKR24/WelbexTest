@@ -1,10 +1,10 @@
 import styles from "./contacts.module.scss"
+import clsx from "clsx";
 
 export default function Contacts() {
   return (
     <>
       <div class={styles.container}>
-        <div class={styles.emptyTop}></div>
         <div class={styles.footer}>
           <div class={styles.block1}>
             <div class={styles.itemTitle}>
@@ -21,9 +21,9 @@ export default function Contacts() {
             </div>
             <div class={styles.itemOrdinaryC}>
               <button class={styles.buttons}>Расчёт стоимости</button>
-              <button class={styles.buttons}>Кейсы</button>
+              <button class={clsx(styles.buttons, styles.buttonSwap2)}>Кейсы</button>
               <button class={styles.buttons}>Услуги</button>
-              <button class={styles.buttons}>Благодарственные письма</button>
+              <button class={clsx(styles.buttons, styles.buttonSwap1)}>Благодарственные письма</button>
               <button class={styles.buttons}>Виджеты</button>
               <button class={styles.buttons}>Сертификаты</button>
               <button class={styles.buttons}>Интеграции</button>

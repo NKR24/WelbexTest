@@ -1,12 +1,13 @@
 @import "../../utilis";
 
 .container {
-    width: 1140px;
+    width: 100%;
     height: 550px;
     flex-shrink: 0;
     display: flex;
     flex-direction: row;
-    //margin-top: 90px;
+    margin-top: 90px;
+    margin-bottom: 55px;
 }
 
 .leftPart {
@@ -169,6 +170,23 @@
     height: 42px;
 }
 
+.blueButton {
+    width: 262px;
+    height: 61px;
+    flex-shrink: 0;
+    background: #4077F3;
+    border: none;
+    color: var(--light-text, #E4E5EA);
+    text-align: center;
+    font-family: Inter, serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 61px;
+    margin-left: auto;
+}
+
 @include s {
     .container {
         //display: none;
@@ -211,5 +229,103 @@
     }
     .l2text {
         font-size: 36px;
+    }
+}
+@include md{
+    .container {
+        height: auto;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .rightPart {
+        margin-left: 0;
+        margin-right: auto;
+        margin-top: 45px;
+    }
+
+    .l1text {
+        font-size: 36px;
+        width: 272px;
+    }
+
+    .l2text {
+        font-size: 36px;
+    }
+
+    .r1text {
+        width: 272px;
+        margin-left: 0;
+        margin-right: auto;
+    }
+
+    .r1PartColor {
+        text-align: start;
+        text-transform: none;
+    }
+
+    //TODO: Добавить палочки, поменять надписи
+    .r2text {
+        margin-top: 40px;
+        display: none;
+        grid-template-columns: [start] 135px [line1] 135px [end];
+        grid-template-rows: [row1-start] 68px [row1-end] 68px [last];
+        column-gap: 30px;
+        row-gap: 30px;
+        place-self: end;
+    }
+
+    .item1 {
+        grid-column: 1;
+        grid-row: 1;
+        display: grid;
+        row-gap: 6px;
+    }
+
+    .item2 {
+        grid-column: 2;
+        grid-row: 1;
+        display: grid;
+        row-gap: 6px;
+    }
+
+    .item3 {
+        grid-column: 1;
+        grid-row: 2;
+        display: grid;
+        row-gap: 6px;
+    }
+
+    .item4 {
+        grid-column: 2;
+        grid-row: 2;
+        display: grid;
+        row-gap: 6px;
+    }
+
+    .r2textOrdianry {
+        color: #E4E5EA;
+        text-align: right;
+        font-family: Montserrat, serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .r2textTitle {
+        color: var(--light-text, #E4E5EA);
+        text-align: right;
+        font-family: Inter, serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.9px;
+        text-transform: uppercase;
+    }
+
+    .blueButton {
+       display: none;
     }
 }

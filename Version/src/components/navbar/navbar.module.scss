@@ -1,7 +1,7 @@
 @import "../../utilis";
 
 .container {
-    width: 1140px;
+    width: 100%;
     height: 73px;
     flex-shrink: 0;
     display: flex;
@@ -33,10 +33,12 @@
 }
 
 .buttonsDiv {
+    display: flex;
     column-gap: 30px;
     margin-left: 52px;
     margin-right: 137px;
     white-space: nowrap;
+    align-items: flex-start;
 }
 
 .buttons {
@@ -48,6 +50,7 @@
     line-height: normal;
     border: none; /* убираем границу */
     background: none;
+    padding: 0 0;
 }
 
 .buttonsLast {
@@ -65,6 +68,7 @@
     display: flex;
     column-gap: 80px;
     padding-top: 4px;
+    margin-left: auto;
 }
 
 .numberDiv {
@@ -127,7 +131,41 @@
     .buttonsLast {
         display: none;
     }
-    .buttons {
 
+}
+@include xl{
+    .number {
+        display: none;
+    }
+}
+@include l{
+    .buttonsLast{
+        display: none;
+    }
+}
+@include lg{
+    .buttonsDiv{
+        display: flex;
+        column-gap: 30px;
+        margin-left: auto;
+        margin-right: 0;
+        white-space: nowrap;
+        align-items: flex-start;
+    }
+    .rightPart {
+        display: none;
+        column-gap: 0;
+        padding-top: 0;
+        width: 0;
+        height: 55px;
+    }
+}
+@include md{
+    .leftPart {
+        display: none;
+    }
+    .buttonsDiv{
+        justify-content: space-between;
+        width: 100%;
     }
 }

@@ -35,6 +35,7 @@ export default function Main() {
               <div class={styles.r2textOrdianry}>использования CRM</div>
             </div>
           </div>
+          <button class={styles.blueButton}>Получить консультацию</button>
         </div>
       </div>
     </>
