@@ -17,3 +17,9 @@ body {
     max-width: 540px;
   }
 }
+
+@include md {
+  body {
+    padding: 0 16px 0 15px;
+  }
+}

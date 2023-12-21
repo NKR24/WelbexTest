@@ -151,6 +151,8 @@
         margin-right: 0;
         white-space: nowrap;
         align-items: flex-start;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
     .rightPart {
         display: none;
@@ -161,6 +163,9 @@
     }
 }
 @include md{
+    .container {
+        height: auto;
+    }
     .leftPart {
         display: none;
     }

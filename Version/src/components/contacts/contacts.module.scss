@@ -47,7 +47,7 @@
 .itemOrdinary {
   display: grid;
   row-gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   white-space: nowrap;
 }
 
@@ -55,14 +55,14 @@
   display: grid;
   row-gap: 10px;
   grid-template-columns: 212px 212px;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto;
   white-space: nowrap;
 }
 
 .itemOrdinaryR {
   display: grid;
-  row-gap: 10px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  grid-template-rows: auto auto auto;
 }
 
 .buttons {
@@ -322,11 +322,20 @@
   .text2 {
     text-align: left;
   }
+
+  .bottom {
+    margin-top: 50px;
+  }
+
+  .itemOrdinaryR {
+    row-gap: 10px;
+  }
 }
 
 @include md {
-  .itemOrdinary {
-    grid-template-rows: 1fr 1fr;
+  .container {
+    margin-top: 41px;
+    margin-bottom: 60px;
   }
 
   .buttonSwap1 {

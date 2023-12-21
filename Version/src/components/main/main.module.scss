@@ -116,6 +116,24 @@
     place-self: end;
 }
 
+.r2TextPhone {
+    color: var(--light-text, #E4E5EA);
+    font-family: Montserrat, serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.65px;
+    display: none;
+}
+
+.line {
+    width: 10px;
+    height: 0.8px;;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    display: none;
+}
+
 .item1 {
     grid-column: 1;
     grid-row: 1;
@@ -236,6 +254,7 @@
         height: auto;
         flex-direction: column;
         margin-top: 40px;
+        margin-bottom: 59px;
     }
 
     .rightPart {
@@ -266,63 +285,67 @@
 
     //TODO: Добавить палочки, поменять надписи
     .r2text {
-        margin-top: 40px;
-        display: none;
-        grid-template-columns: [start] 135px [line1] 135px [end];
-        grid-template-rows: [row1-start] 68px [row1-end] 68px [last];
-        column-gap: 30px;
-        row-gap: 30px;
-        place-self: end;
+        margin-top: 20px;
+        grid-template-columns: [start] auto [line1] auto [end];
+        grid-template-rows: [row1-start] auto [row1-end] auto [last];
+        column-gap: 10px;
+        row-gap: 14px;
+
+        place-self: normal;
+        justify-items: start;
+    }
+
+    .r2TextPhone {
+        display: flex;
+    }
+
+    .line {
+        display: block;
+        align-self: center;
     }
 
     .item1 {
         grid-column: 1;
         grid-row: 1;
         display: grid;
-        row-gap: 6px;
+        row-gap: 0;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
     }
 
     .item2 {
         grid-column: 2;
         grid-row: 1;
         display: grid;
-        row-gap: 6px;
+        row-gap: 0;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
     }
 
     .item3 {
         grid-column: 1;
         grid-row: 2;
         display: grid;
-        row-gap: 6px;
+        row-gap: 0;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
     }
 
     .item4 {
         grid-column: 2;
         grid-row: 2;
         display: grid;
-        row-gap: 6px;
+        row-gap: 0;
+        column-gap: 5px;
+        grid-template-columns: auto auto;
     }
 
     .r2textOrdianry {
-        color: #E4E5EA;
-        text-align: right;
-        font-family: Montserrat, serif;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+        display: none;
     }
 
     .r2textTitle {
-        color: var(--light-text, #E4E5EA);
-        text-align: right;
-        font-family: Inter, serif;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.9px;
-        text-transform: uppercase;
+        display: none;
     }
 
     .blueButton {
