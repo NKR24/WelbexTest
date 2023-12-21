@@ -24,6 +24,7 @@ export default function Contacts() {
               <button class={clsx(styles.buttons, styles.buttonSwap2)}>Кейсы</button>
               <button class={styles.buttons}>Услуги</button>
               <button class={clsx(styles.buttons, styles.buttonSwap1)}>Благодарственные письма</button>
+              <button class={clsx(styles.buttons, styles.buttonSwap3)}>Благодарность клиентов</button>
               <button class={styles.buttons}>Виджеты</button>
               <button class={styles.buttons}>Сертификаты</button>
               <button class={styles.buttons}>Интеграции</button>
@@ -41,10 +42,8 @@ export default function Contacts() {
               <div class={styles.icons}>
                 <a href="https://web.telegram.org/a/#-1001795619629">
                   <button class={styles.iconsButton}>
-                    <svg
+                    <svg class={styles.icon}
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
                       viewBox="0 0 20 20"
                       fill="none"
                     >
@@ -57,10 +56,8 @@ export default function Contacts() {
                 </a>
                 <a href="https://web.telegram.org/a/#-1001795619629">
                   <button class={styles.iconsButton}>
-                    <svg
+                    <svg class={styles.icon}
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="19"
                       viewBox="0 0 20 19"
                       fill="none"
                     >
@@ -85,10 +82,8 @@ export default function Contacts() {
                 </a>
                 <a href="https://web.telegram.org/a/#-1001795619629">
                   <button class={styles.iconsButton}>
-                    <svg
+                    <svg class={styles.icon}
                       xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
                       viewBox="0 0 20 20"
                       fill="none"
                     >

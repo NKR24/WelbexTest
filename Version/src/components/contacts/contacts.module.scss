@@ -54,7 +54,8 @@
 .itemOrdinaryC {
   display: grid;
   row-gap: 10px;
-  grid-template-columns: 212px 212px;
+  grid-template-columns: auto auto;
+  column-gap: 52px;
   grid-template-rows: auto auto auto auto auto;
   white-space: nowrap;
 }
@@ -91,6 +92,12 @@
   display: grid;
 }
 
+.buttonSwap3 {
+  display: none;
+  grid-column: 2;
+  grid-row: 1;
+}
+
 .numberD {
   color: var(--light-text, #E4E5EA);
   text-align: right;
@@ -119,7 +126,6 @@
 .iconsButton {
   border: none; /* убираем границу */
   background: none;
-  height: 20px;
   padding: 0 0;
 }
 
@@ -182,97 +188,9 @@
   row-gap: 20px;
 }
 
-@include s {
-  .container{
-    max-width: 540px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .footer{
-    display: flex;
-    flex-direction: column;
-    column-gap: 98px;
-    row-gap: 10px;
-    height: auto;
-  }
-
-  .buttons {
-    color: var(--light-text, #E4E5EA);
-    font-family: Inter, serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    border: none; /* убираем границу */
-    background: none;
-    display: flex;
-    padding: 0 0;
-  }
-
-  .itemOrdinary {
-    display: grid;
-    row-gap: 10px;
-    grid-template-rows: 1fr 1fr;
-    white-space: normal;
-  }
-
-  .itemOrdinaryC {
-    display: grid;
-    row-gap: 10px;
-    grid-template-columns: 1fr 1.1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    white-space: normal;
-    margin-left: auto;
-  }
-
-  .block1 {
-    width: 289px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .block2 {
-    width: 289px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-  }
-
-  .block3 {
-    width: 289px;
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  .bottom {
-    margin-right: auto;
-  }
-
-  .address {
-    font-size: 14px;
-  }
-
-  .itemTitle {
-    font-size: 12px;
-  }
-
-  .itemTitleR {
-    font-size: 12px;
-    margin-left: 0;
-    margin-right: auto;
-  }
-  .numberD {
-    justify-content: flex-start;
-  }
-  .icons {
-    justify-content: flex-start;
-  }
-
-  .address {
-    text-align: left;
-  }
+.icon {
+  width: 20px;
+  height: 20px;
 }
 
 @include l {
@@ -307,7 +225,6 @@
   .iconsButton {
     border: none; /* убираем границу */
     background: none;
-    height: 20px;
     padding: 0 0;
   }
 
@@ -337,13 +254,62 @@
     margin-top: 41px;
     margin-bottom: 60px;
   }
+}
 
-  .buttonSwap1 {
-    grid-row: 1;
+@include sm {
+
+}
+
+@include s {
+  .address {
+    font-size: 14px;
   }
-
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+  .itemTitle {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
+  .itemTitleR {
+    font-size: 12px;
+    letter-spacing: 0.6px;
+  }
+  .buttons {
+    font-size: 14px;
+  }
+  .buttonSwap1 {
+    display: none;
+  }
   .buttonSwap2 {
     grid-row: 2;
   }
+  .buttonSwap3 {
+    display: grid;
+  }
+  .block2 {
+    width: auto;
+  }
+  .itemOrdinaryC {
+    grid-template-columns: 120px 130px;
+    white-space: normal;
+    column-gap: 28px;
+  }
+  .numberD {
+    white-space: nowrap;
+  }
+  .address {
+    white-space: nowrap;
+  }
+  .text1 {
+    white-space: nowrap;
+  }
+  .text2 {
+    white-space: nowrap;
+  }
+}
+
+@include xs {
 
 }

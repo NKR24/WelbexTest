@@ -100,39 +100,6 @@
     height: 20px;
 }
 
-@include s {
-    .container{
-        width: 100%;
-        flex-shrink: 0;
-        display: flex;
-        justify-content: flex-start;
-    }
-    .leftPart {
-        display: none;
-        width: 0;
-        height: 55px;
-    }
-    .rightPart {
-        display: none;
-        column-gap: 0;
-        padding-top: 0;
-        width: 0;
-        height: 55px;
-    }
-    .buttonsDiv {
-        display: flex;
-        justify-content: center;
-        align-content: center;
-        padding: 16px 20px;
-        column-gap: 16px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .buttonsLast {
-        display: none;
-    }
-
-}
 @include xl{
     .number {
         display: none;
@@ -145,21 +112,11 @@
 }
 @include lg{
     .buttonsDiv{
-        display: flex;
-        column-gap: 30px;
         margin-left: auto;
         margin-right: 0;
-        white-space: nowrap;
-        align-items: flex-start;
-        padding-top: 20px;
-        padding-bottom: 20px;
     }
     .rightPart {
         display: none;
-        column-gap: 0;
-        padding-top: 0;
-        width: 0;
-        height: 55px;
     }
 }
 @include md{
@@ -172,5 +129,27 @@
     .buttonsDiv{
         justify-content: space-between;
         width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .buttons {
+        text-transform: uppercase;
+    }
+}
+
+@include s {
+    .buttons {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .buttonsDiv {
+        column-gap: 16px;
+    }
+}
+
+@include xs {
+    .buttonsDiv {
+        column-gap: 10px;
     }
 }
