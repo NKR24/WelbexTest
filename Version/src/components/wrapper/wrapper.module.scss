@@ -1,0 +1,66 @@
+@import "../../utilis";
+
+.container {
+  background: var(--black, #0E1014);
+  padding: 55px 148px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.ball1 {
+  flex-shrink: 0;
+  position: absolute;
+  left: 33%;
+  top: 10.5%;
+}
+
+.ball2 {
+  flex-shrink: 0;
+  position: absolute;
+  right: 37%;
+  top: 0;
+}
+
+.ball3 {
+  flex-shrink: 0;
+  position: absolute;
+  right: 40%;
+  top: 60%;
+}
+
+.purpleLight {
+  border-radius: 259px;
+  opacity: 0.5;
+  background: #833AB4;
+  filter: blur(196px);
+
+  width: 259px;
+  height: 259px;
+  flex-shrink: 0;
+
+  position: absolute;
+  left: 35%;
+  top: -100px;
+}
+
+.redLight {
+  width: 311px;
+  height: 311px;
+  flex-shrink: 0;
+  border-radius: 311px;
+  opacity: 0.5;
+  background: #961A1A;
+  filter: blur(196px);
+
+  position: absolute;
+  left: -100px;
+  top: 250px;
+}
+
+@include md {
+  .container {
+    padding: 0 16px 0 16px;
+  }
+}
