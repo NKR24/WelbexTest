@@ -10,7 +10,7 @@
 }
 
 .ball1 {
-  opacity: 0;
+  opacity: 1;
   flex-shrink: 0;
   position: absolute;
   left: 33%;
@@ -19,16 +19,20 @@
   transition: 1s ease-in-out;
 }
 
-.ball1:hover{
+.ball1:hover {
   transform: scale(1.5);
 }
 
+.viber:hover {
+  background: #FCB045;
+}
+
 @keyframes fadeIn {
-  from{
+  from {
     opacity: 0;
   }
 
-  to{
+  to {
     opacity: 1;
   }
 }
@@ -43,7 +47,7 @@
   transition: 3s;
 }
 
-.ball2:hover{
+.ball2:hover {
   transform: scale(5);
 }
 
@@ -56,7 +60,7 @@
   transition: 4s;
 }
 
-.ball3:hover{
+.ball3:hover {
   transform: translate(30px);
 }
 

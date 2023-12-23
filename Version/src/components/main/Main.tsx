@@ -19,19 +19,19 @@ export default function Main() {
             <div class={styles.item1}>
               <div class={styles.r2textTitle}>Виджеты</div>
               <div class={styles.r2textOrdianry}>30 готовых решений</div>
-              <div class={styles.line}></div>
+              <div class={styles.line}/>
               <div class={styles.r2TextPhone}>SKYPE АУДИТ</div>
             </div>
             <div class={styles.item2}>
               <div class={styles.r2textTitle}>Dashboard</div>
               <div class={styles.r2textOrdianry}>c показателями вашего бизнеса</div>
-              <div class={styles.line}></div>
+              <div class={styles.line}/>
               <div class={styles.r2TextPhone}>30 ВИДЖЕТОВ</div>
             </div>
             <div class={styles.item3}>
               <div class={styles.r2textTitle}>Skype Аудит</div>
               <div class={styles.r2textOrdianry}>отдела продаж и CRM системы</div>
-              <div class={styles.line}></div>
+              <div class={styles.line}/>
               <div class={styles.r2TextPhone}>DASHBOARD</div>
             </div>
             <div class={styles.item4}>
@@ -39,7 +39,7 @@ export default function Main() {
               <div class={styles.r2textTitle}>35 дней</div>
               {/* eslint-disable-next-line no-irregular-whitespace */}
               <div class={styles.r2textOrdianry}>использования CRM</div>
-              <div class={styles.line}></div>
+              <div class={styles.line}/>
               <div class={styles.r2TextPhone}>МЕСЯЦ AMOCRM</div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import styles from "./navbar.module.scss"
+import clsx from "clsx";
 
 export default function Navbar() {
   return (
@@ -68,7 +69,7 @@ export default function Navbar() {
           </a>
           <div class={styles.icons}>
             <a href="https://web.telegram.org/a/#-1001795619629">
-              <button class={styles.iconsButton}>
+              <button class={clsx(styles.iconsButton, styles.telegram)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
@@ -113,7 +114,7 @@ export default function Navbar() {
             </a>
             <a href="https://web.telegram.org/a/#-1001795619629">
               <button class={styles.iconsButton}>
-                <svg
+                <svg class={styles.viber}
                   xmlns="http://www.w3.org/2000/svg"
                   width="20"
                   height="20"

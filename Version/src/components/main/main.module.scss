@@ -267,8 +267,10 @@
     }
 
     .line {
-        display: block;
-        align-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 8px;
     }
 
     .item1 {
