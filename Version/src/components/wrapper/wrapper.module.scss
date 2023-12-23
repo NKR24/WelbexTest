@@ -10,17 +10,41 @@
 }
 
 .ball1 {
+  opacity: 0;
   flex-shrink: 0;
   position: absolute;
   left: 33%;
   top: 10.5%;
+  animation: fadeIn 5s ease-in-out forwards;
+  transition: 1s ease-in-out;
 }
+
+.ball1:hover{
+  transform: scale(1.5);
+}
+
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
 
 .ball2 {
   flex-shrink: 0;
   position: absolute;
   right: 37%;
   top: 0;
+  animation: fadeIn 6s ease-in-out forwards;
+  transition: 3s;
+}
+
+.ball2:hover{
+  transform: scale(5);
 }
 
 .ball3 {
@@ -28,6 +52,12 @@
   position: absolute;
   right: 40%;
   top: 60%;
+  animation: fadeIn 7s ease-in-out forwards;
+  transition: 4s;
+}
+
+.ball3:hover{
+  transform: translate(30px);
 }
 
 .purpleLight {

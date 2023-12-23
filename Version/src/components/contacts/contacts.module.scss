@@ -143,6 +143,7 @@
   display: flex;
   flex-direction: column;
   margin-top: 33px;
+  animation: 10s fadeIn ease-in-out forwards;
 }
 
 .text1 {
@@ -166,11 +167,22 @@
   text-decoration-line: underline;
 }
 
+@keyframes fadeIn {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 .block1 {
   width: 195px;
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  opacity: 0;
+  animation: 4s fadeIn ease-in-out forwards;
 }
 
 .block2 {
@@ -178,6 +190,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  animation: 7s fadeIn ease-in-out forwards;
 }
 
 .block3 {
@@ -186,6 +199,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+  animation: 8s fadeIn ease-in-out forwards;
 }
 
 .icon {

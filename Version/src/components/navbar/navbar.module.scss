@@ -1,11 +1,24 @@
 @import "../../utilis";
 
 .container {
+    opacity: 0;
     width: 100%;
     height: 73px;
     flex-shrink: 0;
     display: flex;
+    animation: fadeIn 1s ease-in-out forwards;
+    transition: 0.5s ease-in;
 }
+
+@keyframes fadeIn {
+   from{
+       opacity: 0;
+   }
+    to{
+        opacity: 1;
+    }
+}
+
 
 .leftPart {
     width: 140px;
