@@ -1,3 +1,10 @@
+@import "assets/fonts/fonts.css";
+
+@import "utilis.scss";
+
 body {
-  margin: 0;
+  background: var(--black, #0E1014);
+  padding: 0;
+  max-width: max(1728px);
+  margin: 0 auto;
 }
