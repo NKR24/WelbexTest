@@ -1,0 +1,1 @@
+import{ssr as r,ssrHydrationKey as t,createComponent as e}from"solid-js/web";import{W as o}from"./assets/Wrapper-042a7d11.js";import"clsx";var m=["<title",">WELBEX</title>"];function n(){return[r(m,t()),e(o,{})]}export{n as default};

@@ -1,10 +1,9 @@
 {
   "name": "questionnaire",
   "scripts": {
-    "start": "solid-start dev",
-    "build": "solid-start build",
-    "preview": "vite preview",
-    "host": "vite --host"
+    "start": "vinxi dev",
+    "build": "vinxi build",
+    "test": "vinxi start --port 3030"
   },
   "type": "module",
   "devDependencies": {
@@ -23,18 +22,12 @@
     "vite": "^4.4.9"
   },
   "dependencies": {
-    "@solid-primitives/media": "^2.2.5",
-    "@solid-primitives/scroll": "^2.0.20",
-    "@solidjs/meta": "^0.28.6",
-    "@solidjs/router": "^0.8.3",
-    "@types/youtube": "^0.0.49",
     "clsx": "^2.0.0",
-    "plyr": "^3.7.8",
     "prettier": "^3.1.0",
-    "solid-collapse": "^1.1.0",
-    "solid-js": "^1.7.11",
-    "solid-plyr": "^1.0.10",
-    "solid-start": "^0.3.5"
+    "solid-start": "^0.3.5",
+    "@solidjs/start": "^0.4.10",
+    "solid-js": "^1.8.11",
+    "vinxi": "^0.1.4"
   },
   "engines": {
     "node": ">=18"

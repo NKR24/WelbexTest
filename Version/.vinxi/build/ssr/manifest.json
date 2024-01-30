@@ -1,0 +1,52 @@
+{
+  "\u0000virtual:#vinxi/handler/ssr.css": {
+    "file": "assets/ssr-6d606818.css",
+    "src": "\u0000virtual:#vinxi/handler/ssr.css"
+  },
+  "Wrapper.css": {
+    "file": "assets/Wrapper-4c7b6039.css",
+    "src": "Wrapper.css"
+  },
+  "_Wrapper-042a7d11.js": {
+    "css": [
+      "assets/Wrapper-4c7b6039.css"
+    ],
+    "file": "assets/Wrapper-042a7d11.js"
+  },
+  "node_modules/.pnpm/shikiji@0.9.19/node_modules/shikiji/dist/onig.wasm": {
+    "file": "assets/onig-fd885c2d.wasm",
+    "src": "node_modules/.pnpm/shikiji@0.9.19/node_modules/shikiji/dist/onig.wasm"
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "_...404_.js",
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css"
+  },
+  "src/routes/index.tsx?pick=default&pick=$css": {
+    "file": "index.js",
+    "imports": [
+      "_Wrapper-042a7d11.js"
+    ],
+    "isDynamicEntry": true,
+    "isEntry": true,
+    "src": "src/routes/index.tsx?pick=default&pick=$css"
+  },
+  "virtual:#vinxi/handler/ssr": {
+    "css": [
+      "assets/ssr-6d606818.css"
+    ],
+    "dynamicImports": [
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css",
+      "src/routes/index.tsx?pick=default&pick=$css"
+    ],
+    "file": "ssr.js",
+    "imports": [
+      "_Wrapper-042a7d11.js"
+    ],
+    "isEntry": true,
+    "src": "virtual:#vinxi/handler/ssr"
+  }
+}
